@@ -12,9 +12,9 @@ const Featured = () => {
   }, []);
 
   return (
-    <div>
+    <div className="my-12">
       <div className="text-center">
-        <h1 className="text-5xl">Featured Jobs: {jobs.length}</h1>
+        <h1 className="text-5xl font-bold mb-3">Featured Jobs: {jobs.length}</h1>
         <p>
           Explore thousands of job opportunities with all the information you
           need. Its your future
@@ -29,7 +29,7 @@ const Featured = () => {
         className={dataLength === jobs.length ? "hidden" : "text-center my-3"}
       >
         <button
-          className="btn bg-violet-600 "
+          className="btn bg-violet-600  text-white mt-3"
           onClick={() => setDataLength(jobs.length)}
         >
           See More

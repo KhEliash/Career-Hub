@@ -17,7 +17,10 @@ const JobDetails = () => {
   };
 
   return (
+   
     <div className="grid md:grid-cols-4 gap-4 my-12">
+      
+        
       <div className=" md:col-span-3 space-y-3">
         <h1>
           <span className="font-bold">Job description: </span>
@@ -36,7 +39,9 @@ const JobDetails = () => {
           {job.experiences}
         </h1>
       </div>
-      <div className=" space-y-3 p-5">
+
+      {/* right */}
+      <div className=" space-y-3 p-5 bg-[#d9cff8]">
         <h1 className="font-bold">Job Details</h1>
         <h3>
           <span className="font-bold">Salary : </span>
